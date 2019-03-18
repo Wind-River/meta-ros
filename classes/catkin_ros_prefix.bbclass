@@ -64,8 +64,8 @@ FILES_${PN}-commonlisp += " \
     ${datadir}/common-lisp/ \
     "
 
-SYSROOT_PREPROCESS_FUNCS += "ros_sysroot_preprocess"
-ros_sysroot_preprocess () {
+SYSROOT_PREPROCESS_FUNCS += "catkin_ros_prefix_sysroot_preprocess"
+catkin_ros_prefix_sysroot_preprocess () {
     sysroot_stage_dir ${D}${ros_includedir} ${SYSROOT_DESTDIR}${ros_includedir}
     if [ "${BUILD_SYS}" = "${HOST_SYS}" ]; then
         sysroot_stage_dir ${D}${ros_bindir} ${SYSROOT_DESTDIR}${ros_bindir}
