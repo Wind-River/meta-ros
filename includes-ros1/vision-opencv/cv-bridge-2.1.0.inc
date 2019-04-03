@@ -9,4 +9,7 @@ ROS_BUILDTOOL_DEPENDS += " \
 
 # This option disables python2 support because we can't support both python2
 # and python3 since OE upstream has disabled python2 bindings in Boost.
-EXTRA_OECMAKE =+ "${@'-DANDROID=ON' if d.getVar('PYTHON_PN') != 'python3' else ''}"
+EXTRA_OECMAKE =+ "${@'-DANDROID=ON' if d.getVar('PYTHON_PN', True) != 'python3' else ''}"
+
+FILESEXTRAPATHS_prepend := "${THISDIR}/cv-bridge:"
+SRC_URI_append = " file://0001-Fix-configure-error-for-python.patch"
