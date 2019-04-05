@@ -1,3 +1,3 @@
 # Copyright (c) 2019 LG Electronics, Inc.
 
-ROS_BUILD+DEPENDS += "cppzmq"
+ROS_BUILD_DEPENDS += "cppzmq"
