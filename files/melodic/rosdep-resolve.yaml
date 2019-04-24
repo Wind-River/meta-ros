@@ -1,0 +1,630 @@
+# melodic/rosdep-resolve.yaml
+apr:
+- apr
+arduino-core:
+- 'null'
+assimp:
+- assimp@openembedded-core
+assimp-dev:
+- assimp@openembedded-core
+atlas:
+- 'null'
+autoconf:
+- autoconf
+automake:
+- automake
+avahi-daemon:
+- avahi@openembedded-core
+binutils:
+- binutils
+bison:
+- bison
+bluez:
+- bluez5
+boost:
+- boost@openembedded-core
+bullet:
+- bullet@meta-ros
+bzip2:
+- bzip2@openembedded-core
+ca-certificates:
+- ca-certificates
+cmake:
+- cmake@openembedded-core
+coinor-libipopt-dev:
+- 'null'
+collada-dom:
+- collada-dom@meta-ros
+coreutils:
+- coreutils
+cppunit:
+- cppunit@meta-oe
+curl:
+- curl@openembedded-core
+cwiid:
+- 'null'
+cwiid-dev:
+- 'null'
+cython:
+- python-cython
+daemontools:
+- daemontools
+dnsmasq:
+- 'null'
+doxygen:
+- 'null'
+eigen:
+- libeigen@meta-oe
+emacs:
+- readline
+epydoc:
+- python-epydoc
+f2c:
+- 'null'
+festival:
+- festival@meta-ros
+ffmpeg:
+- ffmpeg@openembedded-core
+flex:
+- flex
+ftdi-eeprom:
+- 'null'
+g++-static: []
+gawk:
+- gawk
+gazebo:
+- 'null'
+gazebo9: []
+gdal-bin:
+- 'null'
+geographiclib:
+- geographiclib@meta-ros
+geographiclib-tools:
+- 'null'
+gforth:
+- 'null'
+gfortran:
+- libgfortran
+git:
+- git@openembedded-core
+glut:
+- freeglut@meta-oe
+google-mock:
+- gtest@meta-oe
+graphviz:
+- graphviz@meta-ros
+gstreamer1.0:
+- gstreamer1.0
+gstreamer1.0-plugins-base:
+- gstreamer1.0-plugins-base
+gstreamer1.0-plugins-good:
+- gstreamer1.0-plugins-good
+gstreamer1.0-plugins-ugly:
+- gstreamer1.0-plugins-ugly
+gtest:
+- gtest@meta-oe
+gtk2:
+- 'null'
+gtk3:
+- gtk+3@openembedded-core
+hddtemp:
+- hddtemp
+hostapd:
+- hostapd
+iproute2:
+- iproute2
+joystick:
+- libsdl
+julius-voxforge:
+- 'null'
+jython:
+- 'null'
+lcov:
+- lcov
+leveldb:
+- leveldb
+libasound2-dev:
+- 'null'
+libavahi-client-dev:
+- 'null'
+libavahi-core-dev:
+- 'null'
+libblas-dev:
+- 'null'
+libcairo2-dev:
+- cairo@openembedded-core
+libcap-dev:
+- 'null'
+libccd-dev:
+- libccd@meta-ros
+libceres-dev:
+- ceres-solver@meta-oe
+libcoin80-dev:
+- 'null'
+libconsole-bridge-dev:
+- console-bridge@meta-ros
+libdc1394-dev:
+- 'null'
+libdmtx-dev:
+- 'null'
+libdw-dev:
+- elfutils@openembedded-core
+libfcl-dev:
+- fcl@meta-ros
+libfltk-dev:
+- 'null'
+libfreenect-dev:
+- libfreenect@meta-ros
+libftdi-dev:
+- 'null'
+libftdipp-dev:
+- 'null'
+libgazebo9-dev:
+- libgazebo9@meta-ros
+libgeos++-dev:
+- 'null'
+libgflags-dev:
+- gflags@meta-oe
+libglew-dev:
+- 'null'
+libglib-dev:
+- 'null'
+libgoogle-glog-dev:
+- glog@meta-oe
+libgpgme-dev:
+- gpgme@openembedded-core
+libgphoto-dev:
+- 'null'
+libgps:
+- 'null'
+libgstreamer-plugins-base1.0-dev:
+- 'null'
+libgstreamer1.0-dev:
+- 'null'
+libgts:
+- 'null'
+libjpeg:
+- libjpeq-turbo@openembedded-core
+libjsoncpp:
+- 'null'
+libjsoncpp-dev:
+- 'null'
+liblapack-dev:
+- 'null'
+libmicrohttpd:
+- libmicrohttpd
+libmodbus-dev:
+- 'null'
+libncurses-dev:
+- 'null'
+libnl-3:
+- 'null'
+libnl-3-dev:
+- 'null'
+libnlopt-dev:
+- 'null'
+libnlopt0:
+- 'null'
+libogg:
+- libogg@openembedded-core
+libogre-dev:
+- 'null'
+libois-dev:
+- 'null'
+libopencv-dev:
+- opencv@meta-oe
+libopenexr-dev:
+- 'null'
+libopenni-dev:
+- 'null'
+libopenni2-dev:
+- 'null'
+libopenvdb:
+- 'null'
+libopenvdb-dev:
+- 'null'
+libpcap:
+- libpcap@openembedded-core
+libpcl-all:
+- pcl@meta-ros
+libpcl-all-dev:
+- pcl@meta-ros
+libpng-dev:
+- 'null'
+libpng12-dev:
+- 'null'
+libpoco-dev:
+- poco@meta-oe
+libpq-dev:
+- 'null'
+libpulse-dev:
+- 'null'
+libqglviewer-qt4:
+- 'null'
+libqglviewer-qt4-dev:
+- 'null'
+libqhull:
+- qhull@meta-ros
+libqt4-dev:
+- 'null'
+libqt4-opengl:
+- 'null'
+libqt4-opengl-dev:
+- 'null'
+libqt5-concurrent:
+- 'null'
+libqt5-core:
+- qtbase@meta-qt5
+libqt5-gui:
+- qtbase@meta-qt5
+libqt5-network:
+- 'null'
+libqt5-opengl:
+- qtbase@meta-qt5
+libqt5-opengl-dev:
+- 'null'
+libqt5-svg-dev:
+- 'null'
+libqt5-widgets:
+- qtbase@meta-qt5
+libqt5x11extras5-dev:
+- 'null'
+libqtgui4:
+- 'null'
+libqwt-qt5-dev:
+- 'null'
+libreadline:
+- libedit
+libreadline-dev:
+- 'null'
+libspnav-dev:
+- 'null'
+libsqlite3-dev:
+- sqlite3@openembedded-core
+libssl-dev:
+- openssl@openembedded-core
+libtheora:
+- libtheora@openembedded-core
+libtool:
+- libtool
+libturbojpeg:
+- libjpeq-turbo@openembedded-core
+libudev-dev:
+- udev@openembedded-core
+liburdfdom-dev:
+- 'null'
+liburdfdom-headers-dev:
+- 'null'
+liburdfdom-tools:
+- 'null'
+libusb-1.0:
+- 'null'
+libusb-1.0-dev:
+- libusb1@openembedded-core
+libusb-dev:
+- 'null'
+libv4l-dev:
+- 'null'
+libvtk-qt:
+- 'null'
+libx11-dev:
+- libx11@openembedded-core
+libxext:
+- libxext
+libxi-dev:
+- 'null'
+libxml2:
+- libxml2
+libxmu-dev:
+- 'null'
+libzmq3-dev:
+- zeromq@meta-oe
+linux-kernel-headers:
+- 'null'
+log4cplus:
+- log4cplus
+log4cxx:
+- log4cxx@meta-ros
+lua5.2-dev:
+- lua@meta-oe
+lz4:
+- lz4
+mapnik-utils:
+- 'null'
+mongodb:
+- mongodb
+muparser:
+- 'null'
+nasm:
+- nasm
+netpbm:
+- 'null'
+nkf:
+- 'null'
+nodejs:
+- nodejs
+npm:
+- 'null'
+omniorb:
+- 'null'
+opengl:
+- mesa@openembedded-core
+openssl:
+- openssl@openembedded-core
+osm2pgsql:
+- 'null'
+paramiko:
+- python-paramiko
+phantomjs:
+- 'null'
+pkg-config:
+- pkgconfig@openembedded-core
+postgresql-postgis:
+- 'null'
+proj:
+- acpica
+protobuf:
+- protobuf
+protobuf-dev:
+- protobuf@meta-oe
+python:
+- python
+python-argcomplete:
+- 'null'
+python-argparse: []
+python-avahi:
+- python-avahi
+python-backports.ssl-match-hostname:
+- 'null'
+python-bluez:
+- 'null'
+python-boto3:
+- 'null'
+python-bson:
+- python-bson@meta-ros
+python-cairo:
+- 'null'
+python-cairosvg:
+- 'null'
+python-catkin-lint:
+- 'null'
+python-catkin-pkg:
+- 'null'
+python-catkin-tools:
+- 'null'
+python-chainer-pip:
+- 'null'
+python-chainercv-pip:
+- 'null'
+python-cherrypy:
+- 'null'
+python-click:
+- python-click
+python-colorama:
+- python-colorama
+python-coverage:
+- python-coverage
+python-crypto:
+- python-cryptography
+python-cwiid:
+- 'null'
+python-defusedxml:
+- python-defusedxml@meta-ros
+python-dlib:
+- 'null'
+python-docopt:
+- 'null'
+python-docutils:
+- python-docutils
+python-empy:
+- python-empy@meta-ros
+python-enum34:
+- python-enum34
+python-fcn-pip:
+- 'null'
+python-freezegun-pip:
+- 'null'
+python-future:
+- python-future@meta-python
+python-gdown-pip:
+- 'null'
+python-gi:
+- 'null'
+python-gnupg:
+- 'null'
+python-h5py:
+- 'null'
+python-imageio:
+- 'null'
+python-imaging:
+- python-imaging
+python-impacket:
+- 'null'
+python-joblib:
+- 'null'
+python-kitchen:
+- 'null'
+python-libpgm-pip:
+- 'null'
+python-lxml:
+- python-lxml
+python-mapnik:
+- 'null'
+python-matplotlib:
+- python-matplotlib
+python-mechanize:
+- 'null'
+python-mock:
+- python-mock@meta-python
+python-msgpack:
+- python-msgpack
+python-netifaces:
+- python-netifaces@meta-ros
+python-nose:
+- python-nose
+python-numpy:
+- python-numpy
+python-omniorb:
+- 'null'
+python-opencv:
+- 'null'
+python-opengl:
+- 'null'
+python-pandas:
+- python-pandas
+python-paramiko:
+- python-paramiko@meta-ros
+python-pcapy:
+- 'null'
+python-pep8:
+- python-pep8
+python-percol:
+- 'null'
+python-progressbar:
+- 'null'
+python-psutil:
+- python-psutil
+python-pyassimp:
+- 'null'
+python-pyaudio:
+- 'null'
+python-pydot:
+- 'null'
+python-pygithub3:
+- 'null'
+python-pygraphviz:
+- 'null'
+python-pymongo:
+- python-pymongo
+python-pyproj:
+- 'null'
+python-pytest:
+- python-pytest
+python-pyusb-pip:
+- 'null'
+python-qt5-bindings:
+- 'null'
+python-qt5-bindings-gl:
+- 'null'
+python-qt5-bindings-webkit:
+- 'null'
+python-requests:
+- python-requests
+python-requests-oauthlib:
+- 'null'
+python-rosdep:
+- 'null'
+python-rospkg:
+- 'null'
+python-scipy:
+- 'null'
+python-selenium-pip:
+- 'null'
+python-serial:
+- 'null'
+python-setuptools:
+- python-setuptools
+python-simplejson:
+- python-simplejson
+python-sip:
+- 'null'
+python-skimage:
+- 'null'
+python-sklearn:
+- 'null'
+python-slacker-cli:
+- 'null'
+python-speechrecognition-pip:
+- 'null'
+python-sphinx:
+- ${PYTHON_PN}-sphinx@meta-ros
+python-tabulate-pip:
+- 'null'
+python-termcolor:
+- python-termcolor
+python-texttable:
+- 'null'
+python-tilestache:
+- 'null'
+python-tornado:
+- python-tornado
+python-twisted-core:
+- 'null'
+python-urlgrabber:
+- 'null'
+python-websocket:
+- python-websocket-client
+python-wxtools:
+- 'null'
+python-yaml:
+- 'null'
+qt5-qmake:
+- qtbase@meta-qt5
+qtbase5-dev:
+- qtbase@meta-qt5
+qtdeclarative5-dev:
+- 'null'
+qtmultimedia5-dev:
+- 'null'
+rsync:
+- rsync
+sbcl:
+- 'null'
+screen:
+- screen
+sdl:
+- libsdl@openembedded-core
+sdl-image:
+- libsdl-image@meta-oe
+spacenavd:
+- 'null'
+sshpass:
+- 'null'
+subversion:
+- subversion
+suitesparse:
+- suitesparse@meta-ros
+swig:
+- swig
+tango-icon-theme:
+- 'null'
+tbb:
+- tbb
+time:
+- time
+tinyxml:
+- libtinyxml@meta-oe
+tinyxml2:
+- libtinyxml2@meta-oe
+unzip:
+- unzip
+usbutils:
+- usbutils
+uuid:
+- crossguid
+v4l-utils:
+- v4l-utils
+wget:
+- wget
+wx-common:
+- wxwidgets@meta-ros
+wxpython:
+- wxpython@meta-ros
+wxwidgets:
+- wxwidgets@meta-ros
+xfonts-100dpi:
+- 'null'
+xfonts-75dpi:
+- 'null'
+xterm:
+- ncurses
+xvfb:
+- 'null'
+yaml-cpp:
+- yaml-cpp@meta-ros
+yasm:
+- yasm
+zbar:
+- zbar
+zlib:
+- zlib@openembedded-core
