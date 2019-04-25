@@ -5,8 +5,8 @@ LIC_FILES_CHKSUM = "file://PKG-INFO;beginline=8;endline=8;md5=e910b35b0ef4e1f665
 SRCNAME = "vcstools"
 
 SRC_URI = "http://download.ros.org/downloads/vcstools/vcstools-${PV}.tar.gz"
-SRC_URI[md5sum] = "ae2f802460458142727d69c46315ae54"
-SRC_URI[sha256sum] = "80c5bef67d9b4933b962565bd9b012d001a44b72b9157da3623ace980213427e"
+SRC_URI[md5sum] = "ae14744e5b242e9073b7a7b81f1e72c3"
+SRC_URI[sha256sum] = "95586ab5a8dc02cd52074d88c4c8ecd20dfbaacaf4078b4c7ac1cf706ed4cad5"
 
 S = "${WORKDIR}/${SRCNAME}-${PV}"
 
