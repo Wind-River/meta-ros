@@ -6,9 +6,9 @@ export ROS_DISTRO
 export ROS_VERSION
 export ROS_PYTHON_VERSION
 
-ROS_BPN = "${@d.getVar('BPN', True).replace('-', '_')}"
-ROS_SPN ?= "${ROS_BPN}"
-ROS_SP = "${ROS_SPN}-${PV}"
+ROS_BPN ??= "${@d.getVar('BPN', True).replace('-', '_')}"
+ROS_SPN ??= "${ROS_BPN}"
+ROS_SP ??= "${ROS_SPN}-${PV}"
 
 # Ensure that PYTHON_PN is always set. (ROS_PYTHON_VERSION is set in generated-ros-distro.inc, ie, it will never be unset when
 # we get here.)
