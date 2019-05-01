@@ -36,6 +36,15 @@ RDEPENDS_${PN}_remove = "rcl-logging-log4cxx"
 # |   SchurSpecializations, OpenMP, Multithreading].
 RDEPENDS_${PN}_remove = "cartographer"
 
+# CMake Error at .../ml-classifiers/1.0.1-1-r0/recipe-sysroot/usr/share/rosidl_typesupport_c/cmake/get_used_typesupports.cmake:28 (message):
+#   No RMW implementations found
+# Call Stack (most recent call first):
+#   .../ml-classifiers/1.0.1-1-r0/recipe-sysroot/usr/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cpp_generate_interfaces.cmake:83 (get_used_typesupports)
+#   .../ml-classifiers/1.0.1-1-r0/recipe-sysroot/usr/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:38 (include)
+#   .../ml-classifiers/1.0.1-1-r0/recipe-sysroot/usr/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:280 (ament_execute_extensions)
+#   CMakeLists.txt:86 (rosidl_generate_interfaces)
+RDEPENDS_${PN}_remove = "ml-classifiers"
+
 # OE won't let us build ffmpeg unless LICENSE_FLAGS_WHITELIST contains "commerical".
 RDEPENDS_${PN}_remove = "${@bb.utils.contains('LICENSE_FLAGS_WHITELIST', 'commercial', '', 'ffmpeg', d)}"
 
