@@ -21,4 +21,8 @@ LAYERSERIES_COMPAT_ros-layer = "morty"
 # Since superflore doesn't know when it's generating a recipe that it will be for a build tool, it can't know that what's in
 # ROS_EXEC_DEPEND are also build tools. Manually add them here.
 ROS_SUPERFLORE_GENERATED_BUILDTOOLS += " \
+    ament-tools-native \
+    fastcdr-native \
+    fastrtps-native \
+    rosidl-typesupport-fastrtps-cpp-native \
 "
