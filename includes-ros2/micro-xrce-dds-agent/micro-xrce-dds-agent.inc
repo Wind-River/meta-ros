@@ -11,3 +11,4 @@ FILES_${PN}-doc_prepend = " \
     ${ROS_DATADIR}/LICENSE \
 "
 
+inherit ros-insane
