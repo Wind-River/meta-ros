@@ -21,17 +21,3 @@ EXTRA_OECMAKE_append = " -DBUILD_TESTING=OFF -DPYTHON_SOABI=${@ament__get_python
 export AMENT_PREFIX_PATH="${STAGING_DIR_HOST}${prefix};${STAGING_DIR_NATIVE}${prefix}"
 
 inherit cmake python3native
-
-do_install_append() {
-    rm -rf ${D}${datadir}/${ROS_BPN}/environment
-    rm -f ${D}${datadir}/${ROS_BPN}/local_setup.bash
-    rm -f ${D}${datadir}/${ROS_BPN}/local_setup.sh
-    rm -f ${D}${datadir}/${ROS_BPN}/local_setup.zsh
-    rm -f ${D}${prefix}/local_setup.bash
-    rm -f ${D}${prefix}/local_setup.sh
-    rm -f ${D}${prefix}/local_setup.zsh
-    rm -f ${D}${prefix}/setup.bash
-    rm -f ${D}${prefix}/setup.sh
-    rm -f ${D}${prefix}/setup.zsh
-    rm -f ${D}${prefix}/_order_packages.py
-}
