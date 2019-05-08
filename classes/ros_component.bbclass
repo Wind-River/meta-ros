@@ -7,6 +7,7 @@ export ROS_VERSION
 export ROS_PYTHON_VERSION
 
 ROS_BPN ??= "${@d.getVar('BPN', True).replace('-', '_')}"
+ROS_CN ??= "${ROS_BPN}"
 ROS_SPN ??= "${ROS_BPN}"
 ROS_SP ??= "${ROS_SPN}-${PV}"
 
