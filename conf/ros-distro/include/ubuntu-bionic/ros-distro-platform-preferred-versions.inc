@@ -7,3 +7,4 @@
 PREFERRED_VERSION_linux-raspberrypi ?= "4.4%"
 # Match kernel version of raspberrypi.
 PREFERRED_VERSION_linux-yocto ?= "4.4%"
+PREFERRED_VERSION_yajl ?= "2.1.0"
