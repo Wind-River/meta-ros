@@ -2,6 +2,8 @@
 #
 # Place the fixups necessary to make meta-webosose compatible with meta-ros version 2 here.
 
+RDEPENDS_packagegroup-webos-extended_remove = "packagegroup-ros2-world"
+
 # Undo blacklisting
 PNBLACKLIST[libfreenect] ?= ""
 PNBLACKLIST[freenect-camera] ?= ""
