@@ -28,6 +28,9 @@ RDEPENDS_${PN}_remove = "ament-cmake-pyflakes"
 # Drop until "CMake Error at CMakeLists.txt:106 (string): string sub-command REPLACE requires at least four arguments." is fixed
 RDEPENDS_${PN}_remove = "micro-ros-agent"
 
+# Drop until "python3-pydot" fixed not to install same file as "python3-setuptools".
+RDEPENDS_${PN}_remove = "py-trees"
+
 # Can't build these until we figure out how to build clang-format without building all of clang.
 RDEPENDS_${PN}_remove = "ament-clang-format"
 RDEPENDS_${PN}_remove = "ament-cmake-clang-format"
