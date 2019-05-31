@@ -1,4 +1,4 @@
-# Copyright (c) 2008-2018 LG Electronics, Inc.
+# Copyright (c) 2008-2019 LG Electronics, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,11 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# This implementation introduces next generation build environment for
-# Open webOS. The change introduces a mechanism to add additional layers to the
-# base ones: oe-core, meta-oe, and meta-webos, and to specify the commits to be
-# used for each. mcf now expects the layers to be defined in this file
-# (weboslayers.py in the same directory as mcf) as a list of Python data tuples:
+# Configuration file for the webOS build configuration tool "mcf". The file
+# specifies the name of the distribution, the supported MACHINE-s, and the
+# layers used in the build. The layers are specified via:
 #
 # webos_layers = [
 # ('layer-name', priority, 'URL', 'submission', 'working-dir'),
@@ -31,32 +29,33 @@
 # priority    = Integer layer priority as defined by OpenEmbedded. It also
 #               specifies the order in which layers are searched for files.
 #               Larger values have higher priority. A value of -1 indicates
-#               that the entry is not a layer; for example, bitbake.
+#               that the entry is not for a metadata layer; for example,
+#               bitbake.
 #
-# URL         = The Git repository address for the layer from which to clone.
-#               A value of '' skips the cloning.
+# URL         = Git repository address of the layer from which to clone. A value
+#               of '' skips the cloning.
 #
-# submission  = The information used by Git to checkout and identify the precise
-#               content. Submission values could be "branch=<name>" and
-#               "commit=<id>" or "tag=<tag>". Omitted branch information means
-#               only that "master" will be used as the name of the local
-#               branch. Omitted commit or tag means origin/HEAD will be checked
-#               out (which might NOT be origin/master, although
-#               it usually is).
+# submission  = Information used by Git to fetch the layer and to name the local
+#               branch. This item has the form:
+#                   [branch=<remote-branch-name>][,][commit=<id>|tag=<tag>]
+#               The default for <remote-branch-name> is the branch pointed to by
+#               "origin/HEAD", which is usually "master". If neither "commit"
+#               nor "tag" are present, the current head of <remote-branch-name>
+#               is fetched. Note that the commit fetched does not have to lie
+#               along <remote-branch-name>. If the value of the item is '', no
+#               fetch is done for the layer.
 #
 # working-dir = Alternative directory for the layer.
 #
-# The name of the distribution is also defined in this file
-# along with a list of the valid MACHINE-s
-#
 
+# Value for DISTRO
 Distribution = "webos"
 
 # Supported MACHINE-s
 Machines = ['raspberrypi3','qemux86']
 
-# github.com/openembedded repositories are read-only mirrors of the authoritative
-# repositories on git.openembedded.org
+# Note that the github.com/openembedded repositories are read-only mirrors of
+# the authoritative repositories on git.openembedded.org .
 webos_layers = [
 ('bitbake',                   -1, 'git://github.com/openembedded/bitbake.git',              'branch=1.32,commit=0193e1f', ''),
 
