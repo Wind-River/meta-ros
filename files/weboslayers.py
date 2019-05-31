@@ -13,11 +13,14 @@
 # limitations under the License.
 #
 # Configuration file for the webOS build configuration tool "mcf". The file
-# specifies the name of the distribution, the supported MACHINE-s, and the
-# layers used in the build. The layers are specified via:
+# specifies the name of the distribution, the supported MACHINE-s, the
+# layers used in the build, and additional lines to be appended to the generated
+# conf/bblayers.conf.
 #
-# webos_layers = [
-# ('layer-name', priority, 'URL', 'submission', 'working-dir'),
+# The layers are specified via:
+#
+# Layers = [
+# ('layer-name', priority, 'URL', 'fetch', 'working-dir'),
 # ...
 # ]
 #
@@ -28,14 +31,14 @@
 #
 # priority    = Integer layer priority as defined by OpenEmbedded. It also
 #               specifies the order in which layers are searched for files.
-#               Larger values have higher priority. A value of -1 indicates
-#               that the entry is not for a metadata layer; for example,
-#               bitbake.
+#               Larger values have higher priority. In also determines the order
+#               of layer updates. A value of -1 indicates that the entry is not
+#               for a metadata layer; for example, bitbake.
 #
 # URL         = Git repository address of the layer from which to clone. A value
 #               of '' skips the cloning.
 #
-# submission  = Information used by Git to fetch the layer and to name the local
+# fetch       = Information used by Git to fetch the layer and to name the local
 #               branch. This item has the form:
 #                   [branch=<remote-branch-name>][,][commit=<id>]
 #               The default for <remote-branch-name> is the branch pointed to by
@@ -48,6 +51,9 @@
 # working-dir = Alternative directory for the layer.
 #
 
+# If this setting is absent, version 1 is assumed.
+McfFileVersion = 2
+
 # Value for DISTRO
 Distribution = "webos"
 
@@ -56,7 +62,7 @@ Machines = ['raspberrypi3','qemux86']
 
 # Note that the github.com/openembedded repositories are read-only mirrors of
 # the authoritative repositories on git.openembedded.org .
-webos_layers = [
+Layers = [
 ('bitbake',                   -1, 'git://github.com/openembedded/bitbake.git',              'branch=1.32,commit=0193e1f', ''),
 
 ('meta',                       5, 'git://github.com/openembedded/openembedded-core.git',    'branch=morty,commit=4b32784', ''),
@@ -82,3 +88,7 @@ webos_layers = [
 
 ('meta-webos-ros2',           52, 'git://github.com/webosose/meta-webosose.git',            '', ''),
 ]
+
+# BblayersConfExtraLines is a list of strings to be appended to the generated
+# conf/bblayers.conf .
+BblayersConfExtraLines = []
