@@ -59,13 +59,13 @@ Machines = ['raspberrypi3','qemux86']
 webos_layers = [
 ('bitbake',                   -1, 'git://github.com/openembedded/bitbake.git',              'branch=1.32,commit=0193e1f', ''),
 
-('meta',                       5, 'git://github.com/openembedded/openembedded-core.git',    'branch=morty,commit=4b32784', 'oe-core'),
+('meta',                       5, 'git://github.com/openembedded/openembedded-core.git',    'branch=morty,commit=4b32784', ''),
 
-('meta-oe',                   10, 'git://github.com/openembedded/meta-openembedded.git',    'branch=morty,commit=997caf9', 'meta-oe'),
-('meta-multimedia',           11, 'git://github.com/openembedded/meta-openembedded.git',    '', 'meta-oe'),
-('meta-networking',           12, 'git://github.com/openembedded/meta-openembedded.git',    '', 'meta-oe'),
-('meta-python',               13, 'git://github.com/openembedded/meta-openembedded.git',    '', 'meta-oe'),
-('meta-filesystems',          14, 'git://github.com/openembedded/meta-openembedded.git',    '', 'meta-oe'),
+('meta-oe',                   10, 'git://github.com/openembedded/meta-openembedded.git',    'branch=morty,commit=997caf9', ''),
+('meta-multimedia',           11, 'git://github.com/openembedded/meta-openembedded.git',    '', ''),
+('meta-networking',           12, 'git://github.com/openembedded/meta-openembedded.git',    '', ''),
+('meta-python',               13, 'git://github.com/openembedded/meta-openembedded.git',    '', ''),
+('meta-filesystems',          14, 'git://github.com/openembedded/meta-openembedded.git',    '', ''),
 
 ('meta-qt5',                  20, 'git://github.com/meta-qt5/meta-qt5.git',                 'branch=krogoth,commit=dcfcb58', ''),
 
