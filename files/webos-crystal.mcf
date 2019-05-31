@@ -80,7 +80,7 @@ Layers = [
 ('meta-webos-backports-2.5',  32, 'git://github.com/webosose/meta-webosose.git',            '', ''),
 ('meta-webos-backports-2.6',  33, 'git://github.com/webosose/meta-webosose.git',            '', ''),
 
-('meta-ros2',                 38, 'git://github.com/lgsvl/meta-ros2.git',                   'branch=ros2pr,commit=b92ab96',''),
+('meta-ros',                  38, 'git://github.com/ros/meta-ros.git',                      'branch=morty-draft',''),
 # build 69
 ('meta-webos',                40, 'git://github.com/webosose/meta-webosose.git',            'branch=master,commit=288cff4', ''),
 
