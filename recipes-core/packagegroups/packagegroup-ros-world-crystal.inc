@@ -20,11 +20,6 @@ RDEPENDS_${PN}_remove = "ament-lint-auto"
 RDEPENDS_${PN}_remove = "ament-lint-common"
 RDEPENDS_${PN}_remove = "rosidl-default-generators"
 
-# Drop until able to build python3-ctypes-native
-RDEPENDS_${PN}_remove = "ament-cmake-flake8"
-RDEPENDS_${PN}_remove = "ament-cmake-pep8"
-RDEPENDS_${PN}_remove = "ament-cmake-pyflakes"
-
 # Can't build these until we figure out how to build clang-format without building all of clang.
 RDEPENDS_${PN}_remove = "ament-clang-format"
 RDEPENDS_${PN}_remove = "ament-cmake-clang-format"
