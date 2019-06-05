@@ -7,7 +7,7 @@ ROS_DISTRO_CODENAME = "Dashing Diademata"
 
 # From the release announcement or the last field of the "release-ROS_DISTRO-YYYYMMDD" tag. Prior to the first release of a
 # ROS_DISTRO, set to "". Unfortunately, this has to be updated manually.
-ROS_DISTRO_RELEASE_DATE = ""
+ROS_DISTRO_RELEASE_DATE = "20190531"
 
 # The platform release that the metadata for this ROS distro targets. This determines the versions of the platform packages that
 # OE must provide. It must be one of the values of ROS_DISTRO_RELEASE_PLATFORMS (which is set in generated-ros-distro.inc).
