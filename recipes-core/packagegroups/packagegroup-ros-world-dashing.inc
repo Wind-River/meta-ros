@@ -24,17 +24,11 @@ RDEPENDS_${PN}_remove = "ament-cmake-flake8"
 RDEPENDS_${PN}_remove = "ament-cmake-pep8"
 RDEPENDS_${PN}_remove = "ament-cmake-pyflakes"
 
-# Drop until "CMake Error at CMakeLists.txt:106 (string): string sub-command REPLACE requires at least four arguments." is fixed
-RDEPENDS_${PN}_remove = "micro-ros-agent"
-
-# Drop until "python3-pydot" fixed not to install same file as "python3-setuptools".
-RDEPENDS_${PN}_remove = "py-trees"
-
 # Can't build these until we figure out how to build clang-format without building all of clang.
 RDEPENDS_${PN}_remove = "ament-clang-format"
 RDEPENDS_${PN}_remove = "ament-cmake-clang-format"
 
-# Not used by "crystal"; this allows us to defer fixing log4cxx v0.10.0-13 until working on "melodic".
+# Not used by "dashing"; this allows us to defer fixing log4cxx v0.10.0-13 until working on "melodic".
 RDEPENDS_${PN}_remove = "rcl-logging-log4cxx"
 
 # | CMake Error at .../cartographer/1.0.0-1-r0/recipe-sysroot/usr/lib/cmake/Ceres/CeresConfig.cmake:88 (message):
@@ -45,29 +39,6 @@ RDEPENDS_${PN}_remove = "rcl-logging-log4cxx"
 # |   with components: [EigenSparse, SparseLinearAlgebraLibrary,
 # |   SchurSpecializations, OpenMP, Multithreading].
 RDEPENDS_${PN}_remove = "cartographer"
-
-# CMake Error at .../ml-classifiers/1.0.1-1-r0/recipe-sysroot/usr/share/rosidl_typesupport_c/cmake/get_used_typesupports.cmake:28 (message):
-#   No RMW implementations found
-# Call Stack (most recent call first):
-#   .../ml-classifiers/1.0.1-1-r0/recipe-sysroot/usr/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cpp_generate_interfaces.cmake:83 (get_used_typesupports)
-#   .../ml-classifiers/1.0.1-1-r0/recipe-sysroot/usr/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:38 (include)
-#   .../ml-classifiers/1.0.1-1-r0/recipe-sysroot/usr/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:280 (ament_execute_extensions)
-#   CMakeLists.txt:86 (rosidl_generate_interfaces)
-RDEPENDS_${PN}_remove = "ml-classifiers"
-
-# do_configure() failed:
-# Log data follows:
-# DEBUG: Executing shell function do_configure
-# Traceback (most recent call last):
-#   File "setup.py", line 7, in <module>
-#     package = ElementTree.parse(here / 'package.xml')
-#   File "/mnt/disk2/YOCTO-ARTIFACTS/BUILD-1/tmp-glibc/work/cortexa7t2hf-neon-vfpv4-oe-linux-gnueabi/keystroke/0.3.0-1-r0/recipe-sysroot-native/usr/lib/python3.5/xml/etree/ElementTree.py", line 1195, in parse
-#     tree.parse(source, parser)
-#   File "/mnt/disk2/YOCTO-ARTIFACTS/BUILD-1/tmp-glibc/work/cortexa7t2hf-neon-vfpv4-oe-linux-gnueabi/keystroke/0.3.0-1-r0/recipe-sysroot-native/usr/lib/python3.5/xml/etree/ElementTree.py", line 585, in parse
-#     source = open(source, "rb")
-# TypeError: invalid file: PosixPath('package.xml')
-# WARNING: exit code 1 from a shell command.
-RDEPENDS_${PN}_remove = "keystroke"
 
 # do_compile() failed to build .a:
 # NOTE: VERBOSE=1 cmake --build .../fmi-adapter/0.1.4-1-r0/build --target all -- -j 24
