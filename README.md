@@ -1,12 +1,7 @@
-# Rebaseable Branch `morty-draft`
+# Rebaseable Branch `thud-draft`
 
 **NOTICE:** This branch may be rebased without warning. You are advised to
 specify the `--rebase` option when pulling.
-
-As of 2019-06-01, this branch can be used to build ROS 2 **crystal** using
-OpenEmbedded **morty** on Ubuntu **bionic**. See
-[here](https://github.com/ros/meta-ros/wiki/OpenEmbedded-Build-Instructions)
-for instructions.
 
 # UNDER CONSTRUCTION!
 
