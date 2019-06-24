@@ -86,8 +86,6 @@ Layers = [
 
 ('meta-raspberrypi',          50, 'git://git.yoctoproject.org/meta-raspberrypi',            'branch=morty,commit=2a19226', ''),
 ('meta-webos-raspberrypi',    51, 'git://github.com/webosose/meta-webosose.git',            '', ''),
-
-('meta-webos-ros2',           52, 'git://github.com/webosose/meta-webosose.git',            '', ''),
 ]
 
 # BblayersConfExtraLines is a list of strings to be appended to the generated
