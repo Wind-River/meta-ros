@@ -37,10 +37,10 @@
 #
 # submission  = Information used by Git to fetch the layer and to name the local
 #               branch. This item has the form:
-#                   [branch=<remote-branch-name>][,][commit=<id>|tag=<tag>]
+#                   [branch=<remote-branch-name>][,][commit=<id>]
 #               The default for <remote-branch-name> is the branch pointed to by
-#               "origin/HEAD", which is usually "master". If neither "commit"
-#               nor "tag" are present, the current head of <remote-branch-name>
+#               "origin/HEAD", which is usually "master". If "commit" is not
+#               present, the current head of <remote-branch-name>
 #               is fetched. Note that the commit fetched does not have to lie
 #               along <remote-branch-name>. If the value of the item is '', no
 #               fetch is done for the layer.
