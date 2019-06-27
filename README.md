@@ -3,6 +3,11 @@
 **NOTICE:** This branch may be rebased without warning. You are advised to
 specify the `--rebase` option when pulling.
 
+As of 2019-06-27, this branch can be used to build ROS 2 **crystal** and
+**dashing** using OpenEmbedded **thud** on Ubuntu **bionic**. See
+[here](https://github.com/ros/meta-ros/wiki/OpenEmbedded-Build-Instructions)
+for instructions.
+
 # UNDER CONSTRUCTION!
 
 The original implementation of `meta-ros` for ROS 1 Indigo Igloo
