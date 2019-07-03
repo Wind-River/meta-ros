@@ -1,3 +1,6 @@
 *~
 .*.swp
 files/__pycache__/
+
+# From scripts/ros-generate-recipes.sh
+/.pr-*.tmp
